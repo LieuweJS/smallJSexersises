@@ -2,16 +2,17 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
     <script>
-      let xoff = 0;
-      function setup() {
-        createCanvas(400, 400)
-      }
-
-      function draw() {
-        ellipse(mouseX, mouseY, noise(xoff) * 100 ,noise(xoff) * 100)
-        xoff+= 0.02;
-      }
-      </script>
+    let xoff = 0;
+    let yoff = 1;
+    function setup() {
+      createCanvas(400, 400)
+    }
+    function draw() {
+      ellipse(mouseX, mouseY, noise(xoff) * 100 ,noise(yoff) * 100)
+      xoff+= 0.02;
+      yoff+=0.02;
+    }
+    </script>
   </head>
   <body>
   </body>
